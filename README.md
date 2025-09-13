@@ -1,7 +1,7 @@
 # GWAS Height Analysis
 
 ## Overview
-This project demonstrates a GWAS-style analysis using summary-level data from the **NHGRI-EBI GWAS Catalog**. The workflow includes data cleaning, visualization, and polygenic risk score (PRS) simulation, illustrating fundamental concepts of genome-wide association studies.
+This project demonstrates a GWAS-style analysis using summary-level data from the **NHGRI-EBI GWAS Catalog**. The workflow includes data cleaning, and visualization, illustrating fundamental concepts of genome-wide association studies.
 
 ---
 
@@ -15,9 +15,6 @@ This project demonstrates a GWAS-style analysis using summary-level data from th
   - `OR or BETA` → Effect size  
   - `MAPPED_GENE` → Gene mapping (optional)  
 
-> Note: Individual-level genotype data is not included. PRS is simulated for demonstration purposes.
-
----
 
 ## Workflow
 
@@ -35,17 +32,10 @@ This project demonstrates a GWAS-style analysis using summary-level data from th
 3. **Visualization**
    - **Manhattan Plot:** Shows -log10(P-value) across chromosomes; highlights top SNPs.  
    - **QQ Plot:** Observed vs expected -log10(P-values) to check for inflation/deviation.  
-   - **PRS Simulation Plot:** Simulated individuals’ PRS vs simulated trait values.
 
-4. **Polygenic Risk Score Simulation**
-   - Generate random genotypes for top SNPs.  
-   - Calculate PRS as weighted sum of effect sizes (Beta).  
-   - Plot PRS against simulated trait values to demonstrate predictive power.
-
-5. **Output**
+4. **Output**
    - `gwas_catalog_processed.tsv` → cleaned and processed association data  
-   - `simulated_prs.csv` → simulated PRS for N individuals  
-   - Figures: Manhattan, QQ, and PRS plots
+   - Figures: Manhattan, QQ
 
 ---
 
